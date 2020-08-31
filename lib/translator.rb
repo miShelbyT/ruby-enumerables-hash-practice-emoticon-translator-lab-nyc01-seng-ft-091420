@@ -3,7 +3,7 @@ require 'pry'
 require "yaml"
 
 
-def load_library('./lib/emoticons.yml')
+def load_library("./lib/emoticons.yml")
 #     emoticon_library = './lib/emoticons.yml'
 #     emoticon_library.each_with_object({}) do |name, emoticons, new_hash|
 #     emoticons.each do |val_1, val_2|
