@@ -9,7 +9,7 @@ def load_library(file)
       translator_hash[name] = {english: emoticons[0], japanese: emoticons[1]}
   binding.pry
      end
-   end|a, b|
+   end
 end
 
 # def get_japanese_emoticon
