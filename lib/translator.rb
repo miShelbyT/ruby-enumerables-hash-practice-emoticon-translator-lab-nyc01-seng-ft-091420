@@ -9,7 +9,6 @@ def load_library(file)
     binding.pry
     emoticons.each do |eng_emotion|
       translator_hash = {emotion: {}}
-
     end
   end
 end
