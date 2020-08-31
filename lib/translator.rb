@@ -5,7 +5,7 @@ require "yaml"
 def load_library(file)
   file = YAML.load_file("./lib/emoticons.yml")
     file.each_with_object({}) do |name, emoticons, translator_hash|
-      new_hash[name]: {english: emoticons[0], japanese: emoticons[1]}
+      translator_hash[name]: {english: emoticons[0], japanese: emoticons[1]}
   binding.pry
 
 
