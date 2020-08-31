@@ -6,9 +6,7 @@ def load_library(file)
   emoticon_library = YAML.load_file(file)
   translator_hash = Hash.new
   emoticon_library.each do |name, emoticons|
-
     emoticons.each do |val_1, val_2|
-
       translator_hash = {name: {english: emoticons[0], japanese: emoticons[1]}}
       binding.pry
     end
