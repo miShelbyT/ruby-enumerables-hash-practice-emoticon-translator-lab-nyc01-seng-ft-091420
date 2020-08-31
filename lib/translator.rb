@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 require "yaml"
 
 
@@ -7,7 +7,7 @@ def load_library(file)
     file.each_with_object({}) do |(key, value), translator_hash|
       value.each do |a, b|
       translator_hash[key] = {english: a, japanese: b}
-  binding.pry
+  # binding.pry
      end
    end
 end
