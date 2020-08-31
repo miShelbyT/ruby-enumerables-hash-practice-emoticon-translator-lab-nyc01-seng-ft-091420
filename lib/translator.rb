@@ -7,7 +7,7 @@ def load_library(file)
     file.each_with_object({}) do |(key, value), translator_hash|
       value.each do |a, b|
       translator_hash[key] = {}
-      translator_hash[key] << english: [a]
+      translator_hash[key][english:] = [a]
   # binding.pry
      end
    end
