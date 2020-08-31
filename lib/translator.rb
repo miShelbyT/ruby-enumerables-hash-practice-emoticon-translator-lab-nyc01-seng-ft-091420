@@ -8,7 +8,7 @@ def load_library(file)
   emoticon_library.each do |name, emoticons|
     binding.pry
     emoticons.each do |val_1, val_2|
-      translator_hash = {name: {}}
+      translator_hash = {name: {english: val_1, japanese: val_2}}
     end
   end
 end
