@@ -3,6 +3,7 @@ require "yaml"
 
 
 def load_library(file)
+  file = YAML.load_file("./lib/emoticons.yml")
     file.each_with_object({}) do |name, emoticons, new_hash|
      emoticons.each do |val_1, val_2|
        emoticons[0] = val_1
