@@ -5,10 +5,10 @@ require "yaml"
 def load_library(file)
   emoticon_library = YAML.load_file(file)
   translator_hash = Hash.new
-  emoticon_library.each do |key, emoticons|
+  emoticon_library.each do |name, emoticons|
     binding.pry
-    emoticons.each do |eng_emotion|
-      translator_hash = {emotion: {}}
+    emoticons.each do |val_1, val_2|
+      translator_hash = {name: {}}
     end
   end
 end
